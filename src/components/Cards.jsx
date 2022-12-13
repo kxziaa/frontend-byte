@@ -6,9 +6,7 @@ const Cards = ({ image, nama, lokasi, id}) => {
         <>
         <Link to={`/detail/${id}`} >
             <div className="relative w-max h-max transform transition duration-500  hover:scale-110  shadow-2xl font-poppins">
-                
                 <img src={image} alt="" className="w-56 h-72 rounded-t-lg object-fit" />
-                
                 <div className=" bg-white w-56 h-28 rounded-lg items-center flex flex-col">
                     <h3 className="font-bold text-black text-[20px] text-center mt-2 ">{nama}</h3>
                     <div className="rounded b-lg">
@@ -17,7 +15,7 @@ const Cards = ({ image, nama, lokasi, id}) => {
                     </div>
                 </div>
             </div>
-            </Link>
+        </Link>
         </>
     );
 };
