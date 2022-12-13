@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/Header";
+import Nav from "../components/Nav";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Wisata from "../components/Wisata";
@@ -25,7 +25,7 @@ const Detail = () => {
 
     return (
         <>
-            <Header />
+            <Nav/>
             <Wisata 
                 nama={wisata.nama}
                 lokasi={wisata.lokasi}

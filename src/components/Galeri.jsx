@@ -1,47 +1,26 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Img from './Img';
-import Kabasaran from "../assets/Kabasaran.jpg";
-
+import axios from "axios";
 
 const Galeri = () => {
+  const [wisata, setWisata] = useState([]);
 
-  const rowOne = [
-    {
-      img: Kabasaran,
-    },
-    {
-      img: Kabasaran,
-    },
-    {
-      img: Kabasaran,
-    },
-    {
-      img: Kabasaran,
-    },
-    {
-      img: Kabasaran,
-    },
-    {
-      img: Kabasaran,
-    },
-    {
-      img: Kabasaran,
-    },
-    {
-      img: Kabasaran,
-    },
-    {
-      img: Kabasaran,
-    },
-  ]
+  const getWisata = async () => {
+    const response = await axios.get ("http://localhost:5000/mahesas")
+    setWisata(response.data);
+  };
+   
+  useEffect(() => {
+    getWisata();
+  }, []);
   return (
 
     <section id="galeri" className=" py-10 flex flex-col items-center">
       <h1 className="font-bold text-center text-2xl mt-10">GALERI </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-        {rowOne.map((data) => (
+      <div className="flex flex-wrap justify-center gap-6 mt-10 mx-10">
+        {wisata.map((data) => (
           <Img
-            img={data.img}
+            image={data.image}
           />
         ))}
       </div>

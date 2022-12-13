@@ -1,20 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/Logo.png"
 
 const Cards = ({ image, nama, lokasi, id}) => {
     return (
         <>
-        <Link to={`/detail/${id}`}>
-            <div className="relative w-max h-max">
+        <Link to={`/detail/${id}`} >
+            <div className="relative w-max h-max transform transition duration-500  hover:scale-110  shadow-2xl font-poppins">
                 
-                <img src={image} alt="" className="w-56 rounded-lg" />
+                <img src={image} alt="" className="w-56 h-72 rounded-t-lg object-fit" />
                 
-                <div className="absolute top-0 right-0  bg-[#ff0b0b] text-white px-[10px] py-2 rounded-tr-lg rounded-bl-lg">
-                    <h3 className="font-semibold">{lokasi}</h3>
-                </div>
+                {/* <div className="absolute top-0 right-0  bg-[#ff0b0b] text-white px-[10px] py-2 rounded-tr-lg rounded-bl-lg">
+                    
+                </div> */}
 
-                <div className="text-[#000000]">
-                    <h3 className="font-semibold text-center">{nama}</h3>
+                <div className=" bg-white w-56 h-28 rounded-lg items-center flex flex-col">
+                    <h3 className="font-bold text-black text-[20px] text-center mt-2 ">{nama}</h3>
+                    <div className="rounded b-lg">
+                    <h4 className="font-light flex text-stone-400 mt-2 mx-2 text-center text-[13px]">
+                        {lokasi}</h4>
+                    </div>
                 </div>
             </div>
             </Link>

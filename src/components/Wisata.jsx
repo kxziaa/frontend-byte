@@ -4,7 +4,7 @@ import icon from "../assets/Location.svg"
 const Wisata = ({image, nama, lokasi, desk }) => {
     return (
     <>
-        <div className="sm:mx-[50px] lg:mx-[100px] sm:flex sm:flex-row sm:items-center sm:gap-8 sm:pt-28 mb-6">
+        <div className="sm:mx-[50px] lg:mx-[100px] sm:flex sm:flex-row sm:items-center sm:gap-8 sm:pt-28 mb-6 font-poppins">
                 <img src={image} className="object-cover w-screen sm:w-[450px] h-[300px] lg:w-[500px] lg:h-[450px] xl:w-[550] xl:h-[500px] sm:rounded-xl" alt="" />
                 <div className="mt-10 sm:mt-0">
                     <h2 className="font-bold text-center sm:text-left text-[20px] sm:text-[25px]">{nama}</h2>

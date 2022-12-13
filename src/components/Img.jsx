@@ -1,9 +1,9 @@
 import React from "react";
 
-const Img = ({img}) => {
+const Img = ({image}) => {
     return (
         <div className="py-8 px-10">
-            <img src={img} alt="" className="w-80 rounded-md" />
+            <img src={image} alt="" className="w-80 h-60 rounded-md object-cover" />
         </div>
     )
 }
