@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo.png"
 
 const Cards = ({ image, nama, lokasi, id}) => {
     return (
@@ -10,10 +9,6 @@ const Cards = ({ image, nama, lokasi, id}) => {
                 
                 <img src={image} alt="" className="w-56 h-72 rounded-t-lg object-fit" />
                 
-                {/* <div className="absolute top-0 right-0  bg-[#ff0b0b] text-white px-[10px] py-2 rounded-tr-lg rounded-bl-lg">
-                    
-                </div> */}
-
                 <div className=" bg-white w-56 h-28 rounded-lg items-center flex flex-col">
                     <h3 className="font-bold text-black text-[20px] text-center mt-2 ">{nama}</h3>
                     <div className="rounded b-lg">

@@ -53,12 +53,12 @@ const Search = ({placeholder}) => {
                     
                 </div>
             </div>
-            {filteredData.length != 0 && ( 
-            <div className="mt-[38px] w-[200px] sm:w-fit h-[80px] bg-white shadow-lg overflow-hidden overflow-y-auto absolute rounded-lg">
+            {filteredData.length !== 0 && ( 
+            <div className="mt-[38px] w-[200px] sm:w-fit h-[80px] bg-white bg-opacity-50 shadow-lg overflow-hidden overflow-y-auto absolute rounded-lg">
                 {filteredData.slice(0,10).map((value) => {
                     return (
                     <Link to={`/detail/${value.id}`} target="_blank" >
-                         <p className=" w-[170px] pl-4 text-[13px] font-poppins hover:bg-slate-200">{value.nama}</p>
+                         <p className=" w-[198px] pl-4 text-[15px] text-white font-poppins hover:bg-black h-[30px]">{value.nama}</p>
                     </Link>
                     );
                 })}

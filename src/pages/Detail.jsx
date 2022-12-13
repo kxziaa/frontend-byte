@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Wisata from "../components/Wisata";
+import Galeri from "../components/Galeri";
 
 const Detail = () => {
     const { id } = useParams();
@@ -21,7 +22,7 @@ const Detail = () => {
 
     useEffect(() => {
         getWisata();
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <>
@@ -32,6 +33,7 @@ const Detail = () => {
                 image={wisata.image}
                 desk={wisata.desk}
                 />
+            <Galeri />
         </>
     )
 }

@@ -14,7 +14,7 @@ const Nav = () => {
     return(
         <header>
           <div className="relative">
-            <img src={Kabasaran} alt="" className="brightness-50" />
+            <img src={Kabasaran} alt="" className="w-screen brightness-50" />
             <div className=" w-full h-[50px] sm:h-[60px] px-5 sm:px-10 flex justify-between absolute top-0 ">
                 <div className="flex items-center w-full mr-5 sm:mr-14 lg:mr-20 xl:mr-40 justify-between text-white">
                   <div className="flex flex-row">
@@ -35,9 +35,6 @@ const Nav = () => {
                   <li className=" no-underline hover:underline">
                   <Link to="rekreasi" spy={true} smooth={true} offset={50} duration={500}>Rekreasi</Link>
                   </li>
-                  <li className=" no-underline hover:underline">
-                  <Link to="galeri" spy={true} smooth={true} offset={50} duration={500}>Galeri</Link>
-                  </li>
                 </ul>
                 </div>
                 </div>
@@ -57,8 +54,9 @@ const Nav = () => {
                 <Search />
             </div>
             <div className="hidden sm:flex sm:flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute text-white ">
+
               <h1 className="text-center font-bold text-[50px] xl:text-[70px]">MAHESA.</h1>
-              <p className="text-center xl:text-[30px] font-poppins">APLIKASI SARANA INFORMASI DESTINASI WISATA <br /> <span className="font-bold"> KABUPATEN MINAHASA</span></p>
+              <p className="text-center xl:text-[30px] font-poppins">WEBSITE SARANA INFORMASI DESTINASI WISATA <br /> <span className="font-bold"> KABUPATEN MINAHASA</span></p>
               
             </div>
             </div>

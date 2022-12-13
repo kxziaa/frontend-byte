@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import Cards from "../components/Cards";
 import Header from "../components/Header";
-import Galeri from "../components/Galeri";
 import axios from "axios";
+import Footer from "../components/Footer";
 
 function Home() {
     const [wisata, setWisata] = useState([]);
@@ -21,7 +21,7 @@ function Home() {
       <div className="font-poppins">
       <Header />
 
-      <section id="alam" className="mt-[20px] sm:py-10  flex flex-col items-center">
+      <section id="alam" className="mt-1 sm:py-5  flex flex-col items-center">
         <h1 className="font-bold text-[28px] mt-4">WISATA ALAM</h1>
         <div className="flex flex-wrap justify-center gap-16 mt-10 mx-20">
           {wisata.slice(0,7).map((item) => (
@@ -37,7 +37,7 @@ function Home() {
       </section>
       <section id="kuliner" className="mt-[20px] py-10  flex flex-col items-center">
         <h1 className="font-bold text-center text-[28px]  mt-4">WISATA KULINER</h1>
-        <div className="flex flex-wrap justify-center gap-16 mt-10 mx-20">
+        <div className="flex flex-wrap justify-center gap-16 mt-10 mx-48">
           {wisata.slice(7,12).map((item) => (
             <Cards
             key={item.id}
@@ -77,7 +77,7 @@ function Home() {
           ))}
         </div>
       </section>
-      <Galeri />
+      <Footer />
       </div>
     </>
   );
