@@ -6,10 +6,6 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
-      backgroundImage: (theme) => ({
-        banner: "url('../src/assets/Kabasaran.jpg')"
-      })
-
     },
   },
   plugins: [],

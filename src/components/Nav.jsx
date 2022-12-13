@@ -4,7 +4,7 @@ import Logo from "../assets/Logo.png"
 const Header = () => {
     return (
     <>
-    <header className="w-screen h-[95px] sm:h-[80px] bg-white drop-shadow-lg fixed">
+    <header className="w-screen h-[95px] sm:h-[80px] bg-white drop-shadow-lg absolute">
     <Link to={'/'}>
 
         <div className="flex flex-col items-center mt-4">

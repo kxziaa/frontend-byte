@@ -30,10 +30,10 @@ const Nav = () => {
                   <Link to="kuliner" spy={true} smooth={true} offset={50} duration={500}>Kuliner</Link>
                   </li>
                   <li className=" no-underline hover:underline">
-                    <Link to="budaya" spy={true} smooth={true} offset={50} duration={500}>Budaya</Link>
+                  <Link to="rekreasi" spy={true} smooth={true} offset={50} duration={500}>Rekreasi</Link>
                   </li>
                   <li className=" no-underline hover:underline">
-                  <Link to="rekreasi" spy={true} smooth={true} offset={50} duration={500}>Rekreasi</Link>
+                    <Link to="budaya" spy={true} smooth={true} offset={50} duration={500}>Budaya</Link>
                   </li>
                 </ul>
                 </div>

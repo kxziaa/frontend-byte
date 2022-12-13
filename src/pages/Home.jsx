@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import Cards from "../components/Cards";
 import Header from "../components/Header";
 import axios from "axios";
-import Footer from "../components/Footer";
 
 function Home() {
     const [wisata, setWisata] = useState([]);
@@ -19,9 +18,9 @@ function Home() {
   return (
     <>
       <div className="font-poppins">
-      <Header />
+        <Header />
 
-      <section id="alam" className="mt-1 sm:py-5  flex flex-col items-center">
+        <section id="alam" className="mt-1 sm:py-5  flex flex-col items-center">
         <h1 className="font-bold text-[28px] mt-4">WISATA ALAM</h1>
         <div className="flex flex-wrap justify-center gap-16 mt-10 mx-20">
           {wisata.slice(0,7).map((item) => (
@@ -63,7 +62,7 @@ function Home() {
           ))}
         </div>
       </section>
-      <section id="budaya" className="mt-[20px] py-10  flex flex-col items-center">
+      <section id="budaya" className="mt-[15px] py-10 sm:mb-16 flex flex-col items-center">
         <h1 className="font-bold text-center text-[28px]  mt-4">WISATA BUDAYA</h1>
         <div className="flex flex-wrap justify-center gap-16 mt-10 mx-20">
           {wisata.slice(16,25).map((item) => (
@@ -77,7 +76,6 @@ function Home() {
           ))}
         </div>
       </section>
-      <Footer />
       </div>
     </>
   );

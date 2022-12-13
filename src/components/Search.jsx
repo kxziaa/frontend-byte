@@ -58,7 +58,7 @@ const Search = ({placeholder}) => {
                 {filteredData.slice(0,10).map((value) => {
                     return (
                     <Link to={`/detail/${value.id}`} target="_blank" >
-                         <p className=" w-[198px] pl-4 text-[15px] text-white font-poppins hover:bg-black h-[30px]">{value.nama}</p>
+                         <p className=" w-[198px] pl-3 text-[14px] text-white font-poppins hover:bg-black h-[35px]">{value.nama}</p>
                     </Link>
                     );
                 })}
